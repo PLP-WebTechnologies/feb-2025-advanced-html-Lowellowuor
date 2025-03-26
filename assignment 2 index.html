@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact Page</title>
+</head>
+<body>
+
+    <h2>My To-Do List</h2>
+    <ol type="I">
+        <li>Plan the day</li>
+        <li>Code for 2 hours</li>
+        <li>Read a book</li>
+        <li>Exercise</li>
+        <li>Review work</li>
+    </ol>
+
+    <h2>Beautiful Landscape</h2>
+    <img src="https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Landscape" width="500">
+
+    <h2>Contacts</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Peter Kamau</td>
+                <td>345 Main St</td>
+                <td>+254113661965</td>
+                <td>peterkamau@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Stacy Opala</td>
+                <td>355 Main wen</td>
+                <td>+254153661995</td>
+                <td>stacyopala@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Juma Kiprop</td>
+                <td>235 wema Mzuri</td>
+                <td>+254114661865</td>
+                <td>jumakiprop@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane Wangui</td>
+                <td>345 Main Tem</td>
+                <td>+254113261995</td>
+                <td>janewangui@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Patel Tesh</td>
+                <td>372 kona Jema</td>
+                <td>+254143671465</td>
+                <td>patelteesh@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>User Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="country">Country:</label><br>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="us">Kenya</option>
+                <option value="ca">Uganda</option>
+                <option value="uk">Tanzania</option>
+                <option value="au">Rwanda</option>
+            </select><br><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <p>Interests:</p>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="reading" name="interests" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label><br><br>
+
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+
+</body>
+</html>
